@@ -7,6 +7,7 @@ import LastSectionComponent from "@/components/pages/Home/LastSection";
 import PlacePostComponent from "@/components/pages/Home/PlacePost";
 import { useCheckAuth } from "@/utils/useCheckAuth";
 import React from "react";
+import Privacy from "@/components/pages/Home/Privacy";
 
 export default function Home() {
   // const { user } = useCheckAuth();
@@ -17,6 +18,7 @@ export default function Home() {
       <BannerComponent />
       <UsedByComponent />
       <CompleteWorkComponent />
+      <Privacy />
       <GoodWhat />
       {/* <PlacePostComponent /> */}
       <LastSectionComponent />

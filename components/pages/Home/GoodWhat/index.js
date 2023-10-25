@@ -8,8 +8,8 @@ export default function GoodWhat() {
   return (
     <>
       <MarginBottom />
-      <div className="container-custom container">
-        <BigTitleComponent title="Giá tiền của từng level 1, 2, 3 và giá của các bài GP" />
+      <div className="container-custom container text-center">
+        <BigTitleComponent title="CÁCH THỨC HOẠT ĐỘNG" />
       </div>
       <MarginBottom />
       <div className="container-custom container">
