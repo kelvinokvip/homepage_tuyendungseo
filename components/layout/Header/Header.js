@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { AiFillCaretDown } from "react-icons/ai";
+import Image from "next/image";
 
 export default function Header({ pathname }) {
   const [showDivUserOptions, setShowDivUserOptions] = useState(false);
@@ -24,7 +25,9 @@ export default function Header({ pathname }) {
       className="header-container"
       style={{
         display:
-          pathname.includes("login") || pathname.includes("signup") || pathname.includes("dashboard") 
+          pathname.includes("login") ||
+          pathname.includes("signup") ||
+          pathname.includes("dashboard")
             ? "none"
             : "flex",
       }}
@@ -34,11 +37,14 @@ export default function Header({ pathname }) {
           className="d-flex align-items-center p-3 "
           style={{ paddingLeft: "0 !important" }}
         >
-          <img
-            className="freelancer-logo"
-            src="/freelancer-logo.svg"
-            alt="freelacer-logo.svg"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/freelancer-logo.svg"
+              alt="freelacer-logo.svg"
+              width={200}
+              height={200}
+            />
+          </Link>
         </div>
 
         <div className="d-flex align-items-center">
@@ -60,11 +66,15 @@ export default function Header({ pathname }) {
           ) : (
             <>
               <div className="p-3 auth-btn">
-                <Link href={`https://office.okvip.vin/auth/login`}>Đăng Nhập</Link>
+                <Link href={`https://office.okvip.vin/auth/login`}>
+                  Đăng Nhập
+                </Link>
               </div>
 
               <div className="p-3 auth-btn">
-                <Link href={`https://office.okvip.vin/auth/register`}>Đăng Ký</Link>
+                <Link href={`https://office.okvip.vin/auth/register`}>
+                  Đăng Ký
+                </Link>
               </div>
             </>
           )}

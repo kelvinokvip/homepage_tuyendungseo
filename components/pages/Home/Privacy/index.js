@@ -8,10 +8,10 @@ export default function Privacy() {
     <>
       <MarginBottom />
       <div className="container-custom container text-center">
-        <BigTitleComponent title="CHÍNH SÁCH BẢO MẬT" />
+        <BigTitleComponent title="CHÍNH SÁCH NỔI BẬT" />
       </div>
       <MarginBottom />
-      <div className="container-custom container">
+      <div className="container-custom container text-white">
         <div className="row">
           <p className="fs-4">
             CTV được hợp tác cùng tập đoàn giải trí lớn nhất châu Á
@@ -28,7 +28,7 @@ export default function Privacy() {
             hợp tác đôi bên cùng có lợi
           </p>
           <p className="fs-4">Nhuận bút của CTV được tính dựa trên cấp bậc</p>
-          <table class="table  me-2 ms-2">
+          <table className="table  me-2 ms-2">
             <thead>
               <tr className="table-success text-center">
                 <th scope="col">Level</th>

@@ -22,7 +22,6 @@ export default function Footer({ pathname }) {
       ],
     },
     {
-      title: "Xem thêm",
       items: [
         { url: "https://okvip.network", content: "Đối tác OKVIP" },
         { url: "https://trafficseo.online/", content: "Traffic SEO" },
@@ -56,7 +55,7 @@ export default function Footer({ pathname }) {
               </div>
               <div className="text-item mb-3 text-center">
                 {/* <BsGlobe className="me-3" /> */}
-                Mail
+                freelancer@okvip.com
               </div>
               <div className="text-item mb-3 text-center">
                 {/* <BsFillQuestionCircleFill className="me-3" /> */}
@@ -66,14 +65,16 @@ export default function Footer({ pathname }) {
             {contents.map((val, idx) => {
               return (
                 <div
-                  className="footer-col col-lg-4 col-md-4 col-12 px-2 mb-3 pb-3"
+                  className="footer-col col-lg-4 col-md-4 col-12 px-2 mb-3 pb-3 text-center fs-3"
                   key={idx}
                 >
                   <p className="title-column">{val.title}</p>
                   {val.items.map((item, index) => {
                     return (
                       <div className="text-item mb-1" key={index}>
-                        <a href={item.url}>{item.content}</a>
+                        <a href={item.url} target="_blank">
+                          {item.content}
+                        </a>
                       </div>
                     );
                   })}
@@ -86,14 +87,6 @@ export default function Footer({ pathname }) {
         <div className="footer2">
           <div className="footer2-container">
             <div className="d-flex flex-wrap row pt-4">
-              <div className="col-12 col-md-3 mb-3">
-                <p className="text-14">67.389.624</p>
-                <p>Người Dùng Đã Đăng Ký</p>
-              </div>
-              <div className="col-12 col-md-3 mb-3">
-                <p className="text-14">22.785.127</p>
-                <p>Tổng Số Việc Đã Đăng</p>
-              </div>
               <div className="col-12 col-md-6 mb-3">
                 <p className="text-11">
                   Freelancer ® is a registered Trademark of Freelancer

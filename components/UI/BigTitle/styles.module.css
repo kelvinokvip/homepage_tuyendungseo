@@ -5,6 +5,9 @@
   color: #12151b;
   font-size: 24px;
   line-height: 1.33;
+  background: -webkit-linear-gradient(45deg, #ffbf00, #29b2fe 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 992px) {
   .title h2 {

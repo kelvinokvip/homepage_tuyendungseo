@@ -19,36 +19,21 @@ export default function MenuComponent({ pathname }) {
             <div className="container-custom container text-center">
               <div className={style.menu}>
                 <ul className={style.menu}>
-                  {/* <li>
-                  <Link href="#">CTV casino, game bài</Link>
-                </li>
-                <li>
-                  <Link href="#">CTV Thể Thao</Link>
-                </li>
-                <li>
-                  <Link href="#">CTV khác</Link>
-                </li> */}
                   <li>
-                    <Link href="#">GIỚI THIỆU TẬP ĐOÀN OKVIP</Link>
+                    <Link href="/about">GIỚI THIỆU TẬP ĐOÀN OKVIP</Link>
                   </li>
                   <li>
-                    <Link href="#">PHÚC LỢI CTV</Link>
+                    <Link href="/welfare">PHÚC LỢI CTV</Link>
                   </li>
                   <li>
                     <Link href="#">HƯỚNG DẪN THAM GIA</Link>
                   </li>
                   <li>
-                    <Link href="#">LIÊN HỆ HỖ TRỢ</Link>
+                    <Link href="/support">LIÊN HỆ HỖ TRỢ</Link>
                   </li>
                   <li>
                     <Link href="#">TIN TỨC OKVIP</Link>
                   </li>
-                  {/* <li>
-                  <Link href="#">About</Link>
-                </li>
-                <li>
-                  <Link href="#">Resources</Link>
-                </li> */}
                 </ul>
               </div>
             </div>

@@ -1,3 +1,10 @@
+.primary {
+  border-radius: 10px;
+  border: 1px solid #29b2fe;
+  background-color: #12151b;
+  box-shadow: 1px 0px 5px 1px #ff8100;
+  height: 100%;
+}
 .box {
   display: flex;
   align-items: center;
@@ -11,17 +18,19 @@
 .title h3 {
   font-size: 18px;
   line-height: 1.55;
-  color: #12151b;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 0;
 }
 .desc p {
-  color: #12151b;
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.43;
   font-weight: 400;
   margin-bottom: 0;
   width: 300px;
+  text-align: justify;
+  padding: 10px;
 }
 
 @media (min-width: 992px) {

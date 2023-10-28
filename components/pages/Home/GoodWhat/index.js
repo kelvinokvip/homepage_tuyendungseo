@@ -31,7 +31,7 @@ export default function GoodWhat() {
           />
           <CardComponent
             imageUrl="https://www.f-cdn.com/assets/main/en/assets/illustrations/freelancer/about-me.svg"
-            title="Chúng tôi ở đây để hỗ trợ"
+            title="Hỗ trợ"
             desc="Đội ngũ tuyển dụng viên tài năng của chúng tôi có thể giúp bạn tìm được freelancer tốt nhất cho công việc và các kỹ thuật viên co-pilot của chúng tôi thậm chí có thể quản lý dự án thay cho bạn."
           />
         </div>

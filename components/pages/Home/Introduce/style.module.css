@@ -1,0 +1,6 @@
+.primary {
+  background: -webkit-linear-gradient(45deg, #ffbf00, #29b2fe 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

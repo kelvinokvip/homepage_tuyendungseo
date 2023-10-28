@@ -28,7 +28,7 @@ export default function SkillFilter() {
 
       <div className={`${styles["select-box"]}`}>
         <p className={styles["filter-type"]}>Bạn cần công việc gì?</p>
-        <select class="default-input" id="skill_category">
+        <select className="default-input" id="skill_category">
           <option value="1">CNTT trang web &amp; Phần mềm</option>
           <option value="2">Di động</option>
           <option value="3">Sáng tác</option>
@@ -46,7 +46,7 @@ export default function SkillFilter() {
 
         <br></br>
 
-        <select class="default-input" id="skill_subcategory">
+        <select className="default-input" id="skill_subcategory">
           <option value="-1" selected="selected">
             Chọn một công việc
           </option>
@@ -104,7 +104,7 @@ export default function SkillFilter() {
 
       <div className={`${styles["select-box"]}`}>
         <p className={styles["filter-type"]}>Mức giá theo giờ (USD)</p>
-        <select name="hourly_rate" class="default-input" id="hourly_rate">
+        <select name="hourly_rate" className="default-input" id="hourly_rate">
           <option value="0" id="dafault_hourly_rate" selected="">
             Bất kì giá theo giờ nào
           </option>
@@ -152,7 +152,7 @@ export default function SkillFilter() {
 
       <div className={styles["online-check"]}>
         <p className={styles["filter-type"]}>Trực tuyến</p>
-        <label class="checkbox">
+        <label className="checkbox">
           <input className="form-check-input" type="checkbox"></input>
           Chỉ những freelancer trực tuyến
           <br></br>

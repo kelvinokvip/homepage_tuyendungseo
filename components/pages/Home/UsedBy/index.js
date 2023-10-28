@@ -13,7 +13,7 @@ import DividerComponent from "@/components/UI/Divider";
 export default function UsedByComponent() {
   return (
     <>
-      <div className={style["used-by"]}>
+      <div className={style["used-by"]} style={{ backgroundColor: "#fff" }}>
         <div className={style.content}>
           <div className={style.title}>
             <p>Được dùng bởi</p>
