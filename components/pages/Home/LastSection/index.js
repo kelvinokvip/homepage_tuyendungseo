@@ -1,54 +1,67 @@
-import MainButton from "@/components/UI/Button/MainButton";
-import React from "react";
-import style from "./styles.module.css";
+import BigTitleComponent from "@/components/UI/BigTitle";
+import DividerComponent from "@/components/UI/Divider";
 import MarginBottom from "@/components/UI/MarginBottom";
+import React from "react";
+import Image from "next/image";
+
 export default function LastSectionComponent() {
   return (
     <>
       <MarginBottom />
-      <div className={style.api}>
-        <div
-          className={style.main}
-          style={{
-            background:
-              "url('https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/api-upsell-v3.jpg?image-optimizer=force&format=webply&width=1158')",
-            // backgroundPosition: "left",
-          }}
-        >
-          <div className={style.content}>
-            <div className="container-custom container">
-              <div className={style["main-content"]}>
-                <h2>Freelancer API.</h2>
-                <h3>67 triệu chuyên viên theo nhu cầu</h3>
-                <p>
-                  Tại sao phải thuê người khi bạn chỉ cần tích hợp lực lượng lao
-                  động tài năng trên nền tảng đám mây của chúng tôi?
-                </p>
-                <MainButton title="Xem tài liệu"/>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-xl-12 col-md-12 col-sm-12">
+            <h2 className="text-color-primary text-uppercase">Cách thức tham gia</h2>
+            <div>
+              <Image alt="icon" src={"/images/home/icon-usegroup.png"} width={80} height={20} />
+            </div>
+            <MarginBottom />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xl-4 col-md-4 col-sm-12">
+            <div className="bg-color-primary rounded p-3">
+              <div className="text-center">
+                <p className="fs-3 text-white text-uppercase">Bước 1:</p>
+              </div>
+              <div className="text-left text-white">
+                Đăng ký tài khoản tại website: okvip.vin
+              </div>
+              <div className="text-center p-3">
+                <Image alt src={"/images/home/comuni.jpg"} className="rounded-circle border border-color-primary border-4" width={250} height={250} />
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4 col-md-4 col-sm-12">
+            <div className="bg-color-primary rounded p-3">
+              <div className="text-center">
+                <p className="fs-3 text-white text-uppercase">Bước 2:</p>
+              </div>
+              <div className="text-left text-white">
+                Đăng ký tài khoản tại website: okvip.vin
+              </div>
+              <div className="text-center p-3">
+                <Image alt src={"/images/home/comuni.jpg"} className="rounded-circle border border-color-primary border-4" width={250} height={250} />
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4 col-md-4 col-sm-12">
+            <div className="bg-color-primary rounded p-3">
+              <div className="text-center">
+                <p className="fs-3 text-white text-uppercase">Bước 3:</p>
+              </div>
+              <div className="text-left text-white">
+                Nhận tài khoản CTV nếu vượt qua bài test
+              </div>
+              <div className="text-center p-3">
+                <Image alt src={"/images/home/comuni.jpg"} className="rounded-circle border border-color-primary border-4" width={250} height={250} />
               </div>
             </div>
           </div>
         </div>
-        <div
-          className={style.main}
-          style={{
-            background:
-              "url('https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/enterprise-upsell-v3.jpg?image-optimizer=force&format=webply&width=1158')",
-            // backgroundPosition: "left",
-          }}
-        >
-          <div className={style.content}>
-            <div className={`${style[("main-content")]} ${style[("pl")]}`}>
-              <h2>Freelancer Doanh Nghiệp.</h2>
-              <h3>Ngân sách công ty? Hoàn thành nhiều hơn với ít chi phí hơn</h3>
-              <p>
-              Khai thác nguồn nhân lực 67 triệu người để giúp bạn kinh doanh đạt được nhiều hơn.
-              </p>
-              <MainButton title="Liên hệ với chúng tôi" />
-            </div>
-          </div>
-        </div>
       </div>
+      <MarginBottom />
+      <DividerComponent />
     </>
   );
 }

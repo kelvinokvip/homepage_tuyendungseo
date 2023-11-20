@@ -302,5 +302,21 @@ ul li {
 
 }
 .text-color-primary{
-  color: #E2CA5C;
+  color: #fd9900;
+}
+.text-color-secondary{
+  color: #9A503B;
+}
+.is-divider{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 3px;
+  width: 10%;
+  background-color: #fd9900;
+}
+.border.border-color-primary{
+  border-color: #fd9900 !important;
+}
+.bg-color-primary{
+  background-color: #fd9900;
 }
