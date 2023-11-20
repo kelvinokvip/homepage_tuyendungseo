@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={inter.className}
-        style={{ backgroundColor: "#12151b", color: "#fff" }}
       >
         <GoogleOAuthProvider
           clientId="124038751321-heq9tk8j8mvutq9o8rmspsm8omjr7r5v.apps.googleusercontent.com"
