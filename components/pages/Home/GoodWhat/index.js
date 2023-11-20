@@ -1,44 +1,66 @@
 import BigTitleComponent from "@/components/UI/BigTitle";
-import CardComponent from "@/components/UI/Card";
 import DividerComponent from "@/components/UI/Divider";
 import MarginBottom from "@/components/UI/MarginBottom";
 import React from "react";
+import Image from "next/image";
 
 export default function GoodWhat() {
   return (
     <>
       <MarginBottom />
-      <div className="container-custom container text-center">
-        <BigTitleComponent title="CÁCH THỨC HOẠT ĐỘNG" />
-      </div>
-      <MarginBottom />
-      <div className="container-custom container">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-xl-12 col-md-12 col-sm-12">
+            <h2 className="text-color-primary text-uppercase">Nhuận bút tính theo cấp bậc</h2>
+            <p className="fw-bold text-color-secondary text-uppercase">minh BẠCh công khai</p>
+
+            <MarginBottom />
+          </div>
+        </div>
         <div className="row">
-          <CardComponent
-            imageUrl="https://www.f-cdn.com/assets/main/en/assets/illustrations/project/post-a-project.svg"
-            title="Đăng công việc"
-            desc="Đăng công việc miễn phí và dễ dàng. Chỉ cần điền vào tiêu đề, mô tả và ngân sách, các chào giá cạnh tranh sẽ đến trong chốc lát."
-          />
-          <CardComponent
-            imageUrl="https://www.f-cdn.com/assets/main/en/assets/illustrations/freelancer/work.svg"
-            title="Chọn freelancer"
-            desc="Không có công việc nào là quá lớn hay quá nhỏ. Chúng tôi luôn có freelancer cho các công việc thuộc mọi quy mô hay ngân sách, trong hơn 1800 kỹ năng. Không có công việc nào quá phức tạp. Chúng tôi đều có thể hoàn thành!"
-          />
-          <CardComponent
-            imageUrl="https://www.f-cdn.com/assets/main/en/assets/illustrations/payment/pay-safely.svg"
-            title="Chi trả an toàn"
-            desc="Chỉ chi trả khi công việc được hoàn thành và bạn thấy hài lòng 100% với chất lượng, thông qua hệ thống các mốc thanh toán của chúng tôi."
-          />
-          <CardComponent
-            imageUrl="https://www.f-cdn.com/assets/main/en/assets/illustrations/freelancer/about-me.svg"
-            title="Hỗ trợ"
-            desc="Đội ngũ tuyển dụng viên tài năng của chúng tôi có thể giúp bạn tìm được freelancer tốt nhất cho công việc và các kỹ thuật viên co-pilot của chúng tôi thậm chí có thể quản lý dự án thay cho bạn."
-          />
+          <div className="col-xl-4 col-md-4 col-sm-12">
+            <div className="text-end">
+              <p className="fw-bold text-color-secondary text-uppercase fs-5">Cấp 1: 55k</p>
+              <ul className="text-end text-color-primary">
+                <li>Nhuận bút 55k/1000 từ </li>
+                <li>CTV được nhận tối đa 10 bài/ giỏ hàng </li>
+                <li>Số lượng bài tối đa hàng tháng không giới hạn </li>
+              </ul>
+              <div>
+                <Image alt="icon" src={"/images/home/icon-usegroup.png"} width={80} height={20} />
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4 col-md-4 col-sm-12">
+            <div className="text-end" style={{'padding-top': '70px'}}>
+              <p className="fw-bold text-color-secondary text-uppercase fs-5">Cấp 2: 65k</p>
+              <ul className="text-end text-color-primary">
+                <li>Nhuận bút 65k/ 1000 từ</li>
+                <li>CTV được nhận tối đa 15 bài/ giỏ hàng</li>
+                <li>Số lượng bài tối đa hàng tháng không giới hạn</li>
+              </ul>
+              <div>
+                <Image alt="icon" src={"/images/home/icon-usegroup.png"} width={80} height={20} />
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4 col-md-4 col-sm-12">
+          <div className="text-end" style={{'padding-top': '140px'}}>
+              <p className="fw-bold text-color-secondary text-uppercase fs-5">Cấp 3: 80k</p>
+              <ul className="text-end text-color-primary">
+                <li>Nhuận bút 80k/ 1000 từ</li>
+                <li>CTV được nhận tối đa 20 bài/ giỏ hàng</li>
+                <li>Số lượng bài tối đa hàng tháng không giới hạn</li>
+              </ul>
+              <div>
+                <Image alt="icon" src={"/images/home/icon-usegroup.png"} width={80} height={20} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <MarginBottom />
       <DividerComponent />
-      <MarginBottom />
     </>
   );
 }

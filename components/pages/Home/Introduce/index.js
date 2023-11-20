@@ -8,12 +8,13 @@ export default function IntroduceComponent() {
     <>
       <MarginBottom />
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-xl-6 col-md-6 col-sm-12">
             <h2 className="text-color-primary">GIỚI THIỆU</h2>
             <div>
               <Image src={"/images/home/icon-usegroup.png"} width={80} height={20} />
             </div>
+            <MarginBottom />
             <div className="text-color-primary">
               <p>
                 Tập đoàn OKVIP phát triển website Freelancer nhằm kết nối những bạn trẻ yêu thích kiếm tiền. Chúng tôi cung cấp những công việc mà các bạn có thể tham gia mọi lúc, mọi nơi.
@@ -28,7 +29,8 @@ export default function IntroduceComponent() {
             </div>
           </div>
           <div className="col-xl-6 col-md-6 col-sm-12">
-            <div>
+            <div className="text-center">
+              <Image src={"/images/home/comuni.jpg"} className="rounded-circle" width={350} height={350} />
             </div>
           </div>
         </div>
